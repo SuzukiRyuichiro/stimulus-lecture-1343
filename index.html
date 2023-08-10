@@ -35,7 +35,7 @@
     </div>
 
     <!-- Remove the `d-none` when you want to display the form -->
-    <div class="col-12" data-controller="movies">
+    <div class="col-12" data-controller="movies" data-movies-base-url-value="http://www.omdbapi.com/">>
       <form class="row g-2 justify-content-center py-5" data-action="submit->movies#search">
         <div class="col-4">
           <input type="text" class="form-control" placeholder="Find movie" data-movies-target="input">
@@ -44,7 +44,7 @@
           <input type="submit" class="btn btn-primary">
         </div>
       </form>
-      <ul class="list-group list-group-horizontal" data-movies-target="results"></ul>
+      <ul class="list-group" data-movies-target="results"></ul>
     </div>
   </div>
 </body>
